@@ -1,8 +1,8 @@
 #ifndef _NVIC_INTERFACE_H
 #define _NVIC_INTERFACE_H
-#include "STD_TYPES.h"
-#include "tm4c123gh6pm.h"
-#include "BIT_MATH.h"
+#include "../../LIBRARIES/STD_TYPES.h"
+#include "../../LIBRARIES/tm4c123gh6pm.h"
+#include "../../LIBRARIES/BIT_MATH.h"
 
 
 /*Function declarations*/

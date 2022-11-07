@@ -1,7 +1,7 @@
-#include "GPIO_PRIVATE.h"
+
 #include "GPIO.h"
-#include "tm4c123gh6pm.h"
-#include "BIT_MATH.h"
+#include "../../LIBRARIES/tm4c123gh6pm.h"
+#include "../../LIBRARIES/BIT_MATH.h"
 
 GPIO_ERROR_EN GPIO_pin_init(GPIO_PIN_ST* PIN){
 
@@ -275,4 +275,76 @@ GPIO_ERROR_EN GPIO_pin_EN_interrupt(GPIO_PIN_ST* PIN , u8 edge , u8 singlEdge , 
         return WRONG_PORT;
        
     }
+}
+
+
+char GPIO_get_interrupt_St(GPIO_PIN_ST* PIN){
+	
+	switch (PIN->port)
+    {
+    case PORTA:
+        return GET_BIT(GPIO_PORTA_RIS_R , PIN->pin);
+        
+    
+    case PORTB:
+        return  GET_BIT(GPIO_PORTB_RIS_R , PIN->pin);
+      
+
+    case PORTC:
+        return GET_BIT(GPIO_PORTC_RIS_R , PIN->pin);
+        
+
+    case PORTD:
+         return GET_BIT(GPIO_PORTD_RIS_R , PIN->pin);
+        
+
+    case PORTE:
+        return GET_BIT(GPIO_PORTE_RIS_R , PIN->pin);
+       
+
+    case PORTF:
+        return GET_BIT(GPIO_PORTF_RIS_R , PIN->pin);
+        
+
+    default:
+        return WRONG_PORT;
+       
+    }
+
+    return GPIO_OK;
+}
+GPIO_ERROR_EN GPIO_clr_interrupt_St(GPIO_PIN_ST* PIN){
+
+	switch (PIN->port)
+    {
+    case PORTA:
+        SET_BIT(GPIO_PORTA_ICR_R , PIN->pin);
+        break;
+    
+    case PORTB:
+        SET_BIT(GPIO_PORTB_ICR_R , PIN->pin);
+        break;
+
+    case PORTC:
+        SET_BIT(GPIO_PORTC_ICR_R , PIN->pin);
+        break;
+
+    case PORTD:
+        SET_BIT(GPIO_PORTD_ICR_R , PIN->pin);
+        break;
+
+    case PORTE:
+        SET_BIT(GPIO_PORTE_ICR_R , PIN->pin);
+        break;
+
+    case PORTF:
+        SET_BIT(GPIO_PORTF_ICR_R , PIN->pin);
+        break;
+
+    default:
+        return WRONG_PORT;
+       
+    }
+
+    return GPIO_OK;
 }

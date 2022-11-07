@@ -1,7 +1,7 @@
 #ifndef GPIO_H_
 #define GPIO_H_
 
-#include "../../LIBRARIES/1-STD_TYPES/STD_TYPES.h"
+#include "../../LIBRARIES/STD_TYPES.h"
 
 /**************     MACROS      *************/
 #define INPUT   0
@@ -69,6 +69,8 @@ GPIO_ERROR_EN GPIO_pin_toggle(GPIO_PIN_ST* pin);
 GPIO_ERROR_EN GPIO_pin_read(GPIO_PIN_ST* pin , u8* result);
 GPIO_ERROR_EN GPIO_pin_EN_interrupt(GPIO_PIN_ST* pin , u8 edge , u8 singlEdge , u8 lowlevel);
 
+char GPIO_get_interrupt_St(GPIO_PIN_ST* pin);
+GPIO_ERROR_EN GPIO_clr_interrupt_St(GPIO_PIN_ST* pin);
 
 
 

@@ -1,6 +1,5 @@
 #include "NVIC.h"
-#include "STD_TYPES.h"
-#include "tm4c123gh6pm.h"
+
 
 void NVIC_SetInterrupt  (u8 InterruptID){
 

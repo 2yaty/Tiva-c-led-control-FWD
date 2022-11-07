@@ -64,6 +64,8 @@ void  SYSTICK_delay_m (u32 delayNms ){
 
     NVIC_ST_CTRL_R = 7 ; //START TIMER 
 	
+		SYSTICK_callback = NULL;
+	
 		while (counter);  
 	
 
@@ -78,8 +80,10 @@ void  sysTick_Handler(void) {
         if (SYSTICK_callback != NULL)
         {
             SYSTICK_callback();
+					/*
             SYSTICK_callback = NULL;
 						counter = 0;
+					*/
         }
         
         

@@ -1,0 +1,35 @@
+Dependencies for Project 'Led Control', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
+F (.\App\main.c)(0x6368926C)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\MCAL\GPIO -I .\MCAL\NVIC -I .\MCAL\SysTick -I .\LIBRARIES-I.\RTE\_Target_1-IC:\Users\moham\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\moham\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (App\../MCAL/SysTick/SysTick.h)(0x6368926C)
+I (App\../MCAL/SysTick/../../LIBRARIES/STD_TYPES.h)(0x631C1E10)
+I (App\../MCAL/SysTick/../../LIBRARIES/BIT_MATH.h)(0x631C1BB8)
+I (App\../MCAL/SysTick/../../LIBRARIES/tm4c123gh6pm.h)(0x63549689)
+I (App\../MCAL/GPIO/GPIO.h)(0x6368926C)
+I (App\../MCAL/NVIC/NVIC.h)(0x6368926C)
+F (.\MCAL\GPIO\GPIO.c)(0x6368926C)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\MCAL\GPIO -I .\MCAL\NVIC -I .\MCAL\SysTick -I .\LIBRARIES-I.\RTE\_Target_1-IC:\Users\moham\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\moham\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (MCAL\GPIO\GPIO.h)(0x6368926C)
+I (MCAL\GPIO\../../LIBRARIES/STD_TYPES.h)(0x631C1E10)
+I (MCAL\GPIO\../../LIBRARIES/tm4c123gh6pm.h)(0x63549689)
+I (MCAL\GPIO\../../LIBRARIES/BIT_MATH.h)(0x631C1BB8)
+F (.\MCAL\NVIC\NVIC.c)(0x6368926C)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\MCAL\GPIO -I .\MCAL\NVIC -I .\MCAL\SysTick -I .\LIBRARIES-I.\RTE\_Target_1-IC:\Users\moham\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\moham\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM-o .\objects\nvic.o --omf_browse .\objects\nvic.crf --depend .\objects\nvic.d)
+I (MCAL\NVIC\NVIC.h)(0x6368926C)
+I (MCAL\NVIC\../../LIBRARIES/STD_TYPES.h)(0x631C1E10)
+I (MCAL\NVIC\../../LIBRARIES/tm4c123gh6pm.h)(0x63549689)
+I (MCAL\NVIC\../../LIBRARIES/BIT_MATH.h)(0x631C1BB8)
+F (.\MCAL\SysTick\SysTick.c)(0x63667CE0)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\MCAL\GPIO -I .\MCAL\NVIC -I .\MCAL\SysTick -I .\LIBRARIES-I.\RTE\_Target_1-IC:\Users\moham\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\moham\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+I (MCAL\SysTick\SysTick.h)(0x6368926C)
+I (MCAL\SysTick\../../LIBRARIES/STD_TYPES.h)(0x631C1E10)
+I (MCAL\SysTick\../../LIBRARIES/BIT_MATH.h)(0x631C1BB8)
+I (MCAL\SysTick\../../LIBRARIES/tm4c123gh6pm.h)(0x63549689)
+F (RTE\Device\TM4C123GH6PM\startup_TM4C123.s)(0x63689414)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-IC:\Users\moham\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\moham\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "TM4C123GH6PM SETA 1"--list .\listings\startup_tm4c123.lst --xref -o .\objects\startup_tm4c123.o --depend .\objects\startup_tm4c123.d)
+F (RTE\Device\TM4C123GH6PM\system_TM4C123.c)(0x63689414)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\MCAL\GPIO -I .\MCAL\NVIC -I .\MCAL\SysTick -I .\LIBRARIES-I.\RTE\_Target_1-IC:\Users\moham\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\moham\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="529" -D_RTE_ -DTM4C123GH6PM-o .\objects\system_tm4c123.o --omf_browse .\objects\system_tm4c123.crf --depend .\objects\system_tm4c123.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
+I (C:\Users\moham\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530EF2F6)
+I (C:\Users\moham\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h)(0x550FE22C)
+I (C:\Users\moham\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F9F3E)
+I (C:\Users\moham\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F9F3E)
+I (C:\Users\moham\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F9F3E)
+I (C:\Users\moham\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F9F3E)
+I (C:\Users\moham\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F9F3E)
+I (C:\Users\moham\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6E406)
